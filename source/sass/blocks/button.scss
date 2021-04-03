@@ -2,12 +2,22 @@
 
 .button {
   min-width: 280px;
-  height: 40px;
   margin: 0 0 0 20px;
+  padding: 11px 0;
   font-style: bold;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  background-color: $green;
+  text-align: center;
   color: $white;
+  background-color: $green;
+
+  &:hover {
+    background-color: $green-hover-active;
+  }
+
+  &:active {
+    color: rgba($white, 0.3%);
+    background-color: $green-hover-active;
+  }
 }

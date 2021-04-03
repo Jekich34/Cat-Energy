@@ -1,0 +1,13 @@
+//Example
+
+.example {
+  width: 320px;
+  margin-left: -8px;
+  background-color: $hoar;
+}
+
+.example__title {
+  margin: 0 0 40px 20px;
+
+  @include titie;
+}
