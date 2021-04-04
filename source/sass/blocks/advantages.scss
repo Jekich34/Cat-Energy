@@ -1,7 +1,7 @@
 //Advantages
 
 .advantages__title {
-  margin: 0 0 40px 12px;
+  margin: 0 0 40px 20px;
 
   @include titie;
 }
@@ -9,4 +9,5 @@
 .advantages__item {
   padding: 0 0 20px 50px;
   font-family: $arial;
+  color: $special_dark-grey;
 }
