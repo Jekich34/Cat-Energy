@@ -29,7 +29,15 @@
 }
 
 .page-footer__image {
-  padding: 40px 96px 30px;
+  margin: 40px 96px 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social {
@@ -37,6 +45,20 @@
   border: 1px solid $dark-grey;
   border-left: none;
   border-right: none;
+}
+
+.social__item {
+  width: 20px;
+  margin: 20px;
+  fill: $social-gray;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: rgba($green, 0.3);
+  }
 }
 
 .page-footer__copyright {
@@ -47,4 +69,19 @@
 
 .copyright__link {
   color: $special_dark-grey;
+  fill: $social-gray;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link-logo {
+  &:active {
+    fill: rgba($green, 0.3);
+  }
 }
