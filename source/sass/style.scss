@@ -12,6 +12,7 @@
 
 // Blocks
 
+//Index
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
@@ -19,4 +20,11 @@
 @import "blocks/programs.scss";
 @import "blocks/advantages.scss";
 @import "blocks/example.scss";
+
+//Catalog
+@import "blocks/catalog.scss";
+@import "blocks/catalog-show-all.scss";
+@import "blocks/additional-products.scss";
+
+//Footer
 @import "blocks/page-footer.scss";
