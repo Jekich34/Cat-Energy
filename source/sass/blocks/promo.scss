@@ -9,9 +9,11 @@
 }
 
 .promo__title {
+  padding-top: 25px;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
   color: $white;
 }
 
@@ -19,11 +21,12 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
   color: $white;
 }
 
 .promo__choose-program-button {
-  margin: 325px 0 -10px 20px;
+  margin: 300px 0 -10px 20px;
   font-size: 14px;
   line-height: 18px;
 }
