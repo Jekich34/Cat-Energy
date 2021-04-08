@@ -76,21 +76,30 @@
           </ul>
         </fieldset>
       </section>
-      <section class="information">
-        <legend class="information__contacts title">Контактные данные (владельца кота)</legend>
+      <section class="contacts">
+        <legend class="contacts__title title">Контактные данные (владельца кота)</legend>
         <p>
-          <label class="information__email">Email:*
-            <input class="information__email-item" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <label class="contacts__email">Email:*
+            <input class="contacts__email-item" type="email" name="email" placeholder="kuklachev@gmail.com">
           </label>
         </p>
         <p>
-          <label class="information__phone">Телефон:*
-            <input class="information__phone-item" type="phone" name="phone" placeholder="8 (960) 900-60-90">
+          <label class="contacts__phone">Телефон:*
+            <input class="contacts__phone-item" type="phone" name="phone" placeholder="8 (960) 900-60-90">
           </label>
         </p>
-        <legend class="information__comment title">Комментарий</legend>
-        <textarea class="information__comment-item" name="comment"
+      </section>
+      <section class="comment">
+        <legend class="comment__title title">Комментарий</legend>
+        <textarea class="comment__item" name="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
+      </section>
+
+
+
+
+
+      <section class="additionally">
         <fieldset class="information__additionally">
           <legend class="information__additionally-caption title">Дополнительно</legend>
           <ul class="information__additionally-list">
@@ -120,7 +129,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="contacts">
+      <div class="contacts contacts-catalog-form">
         <h2 class="visually-hidden">Наш адрес</h2>
         <p class="contacts__text">
           Приглашаем<br>

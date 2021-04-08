@@ -7,3 +7,16 @@
   line-height: 40px;
 }
 
+@mixin catalog-title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@mixin description-text {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $arial;
+  color: $special-dark-grey;
+}

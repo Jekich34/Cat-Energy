@@ -17,17 +17,11 @@
 .catalog__link-title {
   display: inline-block;
   width: 76px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+
+  @include catalog-title;
   color: $light-black;
 }
 
 .catalog__description {
-  font-size: 12px;
-  line-height: 16px;
-  font-family: $arial;
-  color: $special-dark-grey;
+  @include description-text;
 }
-
