@@ -10,9 +10,8 @@
 
 .promo__title {
   padding-top: 25px;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
+
+  @include medium-title;
   text-align: center;
   color: $white;
 }
