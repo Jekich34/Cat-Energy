@@ -1,0 +1,65 @@
+//Form
+
+.form {
+  padding: 0 20px;
+}
+
+.form__title {
+  @include medium-title;
+}
+
+.page-form {
+  text-transform: uppercase;
+}
+
+.page-form-programs-choose__disclaimer {
+  padding: 5px 0 25px 0;
+  text-transform: uppercase;
+}
+
+.page-form-programs-choose__title {
+  @include label;
+  color: $special-dark-grey;
+}
+
+.page-form-programs-choose__value {
+  margin-left: 10px;
+  padding: 12px 15px;
+
+  @include label;
+  font-family: $oswald;
+  border: 1px solid $low-grey;
+  border-radius: 0;
+}
+
+.cat-name {
+  width: 194px;
+}
+
+.cat-weight {
+  width: 172px;
+}
+
+.cat-old {
+  width: 132px;
+}
+
+.page-form-programs-choose__radio-wrapper {
+  width: 320px;
+  margin: 25px 0 0 -20px;
+  border: 1px solid $dark-grey;
+  border-left: none;
+  border-right: none;
+}
+
+.page-form-programs-choose__list {
+  margin: 0 0 -15px -40px;
+
+  @include label;
+  color: $light-black;
+}
+
+.page-form-programs-choose__radio {
+  margin: 15px 30px 15px 5px;
+  border: none;
+}
