@@ -13,10 +13,18 @@
   line-height: 36px;
 }
 
+@mixin description-inputs {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $black;
+}
+
 @mixin catalog-title {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
+  font-family: $oswald;
   text-transform: uppercase;
 }
 
