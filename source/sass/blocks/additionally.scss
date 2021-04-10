@@ -1,0 +1,23 @@
+//Additionally
+
+.additionally__information {
+  margin-top: 25px;
+  border: none;
+}
+
+.additionally__information-caption {
+  margin: 0 0 25px -15px;
+
+  @include description-inputs;
+}
+
+.additionally__information-list {
+  margin: 0 0 15px -40px;
+
+  @include label;
+  color: $black;
+}
+
+.additionally__information-checkbox {
+  margin: 15px 30px 15px -5px;
+}

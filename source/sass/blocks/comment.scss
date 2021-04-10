@@ -1,0 +1,18 @@
+//Comment
+
+.comment__title {
+  margin: 0 0 35px 0;
+
+  @include description-inputs;
+}
+
+.comment__item {
+  min-width: 245px;
+  min-height: 122px;
+  padding: 12px 15px;
+
+  @include label;
+  font-family: $oswald;
+  border: 1px solid $low-grey;
+  border-radius: 0;
+}
