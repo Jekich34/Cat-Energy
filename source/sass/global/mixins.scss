@@ -41,3 +41,18 @@
   font-family: $arial;
   color: $special-dark-grey;
 }
+
+//Mixins-border
+
+@mixin border {
+
+  border: 1px solid $low-grey;
+
+  &:hover {
+    border: 1px solid $less-gray;
+  }
+
+  &:focus {
+    border: 1px solid $special-dark-grey;
+  }
+}

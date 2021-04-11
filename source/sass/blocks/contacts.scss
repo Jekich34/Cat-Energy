@@ -23,6 +23,7 @@
   padding: 12px 50px 12px 15px;
 
   @include label;
+  @include border;
   font-family: $oswald;
   border: 1px solid $low-grey;
   border-radius: 0;
