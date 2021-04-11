@@ -13,11 +13,10 @@
 .page-form-programs-choose__value {
   margin-left: 10px;
   padding: 12px 15px;
+  font-family: $oswald;
 
   @include label;
-  font-family: $oswald;
-  border: 1px solid $low-grey;
-  border-radius: 0;
+  @include border;
 }
 
 .cat-name {
@@ -45,6 +44,12 @@
 
   @include label;
   color: $light-black;
+}
+
+.page-form-programs-choose__label {
+  &[disabled] {
+    opacity: 0.3;
+  }
 }
 
 .page-form-programs-choose__radio {

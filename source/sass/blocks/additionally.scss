@@ -18,6 +18,12 @@
   color: $black;
 }
 
+.additionally__information-label {
+  &[disabled] {
+    opacity: 0.3;
+  }
+}
+
 .additionally__information-checkbox {
   margin: 15px 30px 15px -5px;
 }
