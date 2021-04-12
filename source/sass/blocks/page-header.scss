@@ -1,5 +1,18 @@
 //Page-header
 
+.page-header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    width: 768px;
+  }
+}
+
 .page-header__image {
   padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
