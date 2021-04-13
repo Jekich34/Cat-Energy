@@ -7,14 +7,19 @@
 }
 
 .main-nav__list {
-  margin-left: -40px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 440px;
-    margin: 0 0 0 13px;
-    padding: 0;
+    margin: 0 30px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 478px;
+    margin: 0 112px 0 0;
   }
 }
 
@@ -36,7 +41,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 42px 0 8px 0;
+    margin: 42px 0 8px 0;
+    padding: 0 0 8px 0;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
@@ -58,5 +64,19 @@
       opacity: 0.3;
     }
   }
-}
 
+  @media (min-width: $desktop-width) {
+    margin: 72px 0 9px 0;
+    padding: 0 0 9px 0;
+    font-size: 20px;
+    line-height: auto;
+
+    /*&:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }*/
+  }
+}

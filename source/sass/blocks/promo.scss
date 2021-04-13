@@ -1,31 +1,87 @@
 .promo {
-  margin: -30px 0 -70px 0;
-  height: 563px;
+  margin: -30px 0 30px 0;
   background-image:
     url("../../img/index-can-mobile@1x.png"),
     url("../../img/index-background-mobile@1x.jpg");
   background-position: 20px 168px, 0 0;
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 825px;
+    margin: 0;
+    background-image: url("../../img/index-can-tablet@1x.jpg");
+    background-position: 28px 227px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 825px;
+    margin: 0;
+    background-image:
+      url("../../img/index-can-desktop@1x.jpg"),
+      url("../../img/index-background-desktop@1x.jpg");
+    background-position: 28px 227px, 720px -200px;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+.promo__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 30px 30px 0 118px;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 82px 30px 0 190px;
+  }
 }
 
 .promo__title {
   padding-top: 25px;
 
   @include medium-title;
-  text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  text-align: center;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin: 41px 20px 49px 0;
+
+    @include title-tablet-desktop;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 20px 51px 0;
+  }
 }
 
 .promo__choose-program-button {
   margin: 300px 0 -10px 20px;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 17px 20px;
+    width: 204px;
+
+    @include title-tablet-desktop;
+  }
 }

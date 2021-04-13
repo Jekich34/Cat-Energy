@@ -20,6 +20,11 @@
   color: $black;
 }
 
+@mixin title-tablet-desktop {
+  font-size: 20px;
+  line-height: 20px;
+}
+
 @mixin catalog-title {
   font-weight: normal;
   font-size: 16px;
