@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 825px;
+    height: 835px;
     margin: 0;
     background-image: url("../../img/index-can-tablet@1x.jpg");
     background-position: 28px 227px;
@@ -17,13 +17,9 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    height: 825px;
+    height: 525px;
     margin: 0;
-    background-image:
-      url("../../img/index-can-desktop@1x.jpg"),
-      url("../../img/index-background-desktop@1x.jpg");
-    background-position: 28px 227px, 720px -200px;
-    background-repeat: no-repeat, no-repeat;
+    background-image: none;
   }
 }
 

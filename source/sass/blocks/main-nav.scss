@@ -68,15 +68,19 @@
   @media (min-width: $desktop-width) {
     margin: 72px 0 9px 0;
     padding: 0 0 9px 0;
-    font-size: 20px;
-    line-height: auto;
 
-    /*&:hover {
-      opacity: 0.6;
+    @include title-tablet-desktop-auto;
+  }
+}
+
+.main-nav__item--index {
+  @media (min-width: $desktop-width) {
+    a {
+      color: $white;
     }
 
-    &:active {
-      opacity: 0.3;
-    }*/
+    &.main-nav__item--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }

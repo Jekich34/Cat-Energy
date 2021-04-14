@@ -1,7 +1,15 @@
 //Programs
 
 .programs__list {
-  margin-top: 10px;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    //justify-content: space-around;
+    width: 1440px;
+  }
 }
 
 .programs__item {
@@ -10,6 +18,21 @@
   padding: 20px;
   color: $special-dark-grey;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 708px;
+    min-height: 372px;
+    margin: 0 30px 30px -10px;
+    padding: 68px 53px 50px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    margin: 52px 10px 0 70px;
+    padding: 68px 0 0 53px;
+  }
 }
 
 .programs__title {
@@ -20,6 +43,16 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 8px;
+
+    @include medium-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 0 58px 160px;
+  }
 }
 
 .programs__description {
@@ -27,6 +60,37 @@
   padding-bottom: 20px;
   font-family: $arial;
   border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 38px;
+
+    @include title-tablet-desktop-description;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 13px;
+  }
+}
+
+.programs__description-slim {
+  @media (min-width: $tablet-width) {
+    width: 377px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+  }
+}
+
+.programs__description-mass {
+  @media (min-width: $tablet-width) {
+    width: 342px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
 }
 
 .programs__catalog {
@@ -37,5 +101,9 @@
 
   &:active {
     color: rgba($black, 0.3%);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet-desktop-auto;
   }
 }
