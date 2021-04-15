@@ -1,6 +1,11 @@
 //Mixins
 
 //Mixins-text
+@mixin title-tablet-desktop-big {
+  font-size: 60px;
+  line-height: 60px;
+}
+
 @mixin titie {
   font-weight: normal;
   font-size: 36px;
