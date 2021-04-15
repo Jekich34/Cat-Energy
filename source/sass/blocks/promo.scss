@@ -3,11 +3,10 @@
   background-image:
     url("../../img/index-can-mobile@1x.png"),
     url("../../img/index-background-mobile@1x.jpg");
-  background-position: 20px 168px, 0 0;
+  background-position: 20px 166px, 0 0;
   background-repeat: no-repeat, no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 835px;
     margin: 0;
     background-image: url("../../img/index-can-tablet@1x.jpg");
@@ -16,7 +15,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     height: 525px;
     margin: 0;
     background-image: none;
@@ -37,20 +35,21 @@
 }
 
 .promo__title {
-  padding-top: 25px;
+  padding-top: 27px;
 
   @include medium-title;
   color: $white;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    font-size: 60px;
-    line-height: 60px;
+
+    @include title-tablet-desktop-big;
     color: $black;
   }
 }
 
 .promo__slogan {
+  margin: -5px 0 0 -2px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -69,7 +68,7 @@
 }
 
 .promo__choose-program-button {
-  margin: 300px 0 -10px 20px;
+  margin: 303px 0 -8px 20px;
   font-size: 14px;
   line-height: 18px;
 

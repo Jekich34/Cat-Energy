@@ -11,6 +11,14 @@
   margin: 0;
   color: $black;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-body--index {
