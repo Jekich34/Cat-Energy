@@ -1,8 +1,8 @@
 //Footer
 
 .contacts {
-  min-height: 114px;
-  padding: 10px 0 10px 18px;
+  display: flex;
+  margin: 8px 0 6px 0;
 }
 
 .contacts-catalog-form {
@@ -10,10 +10,15 @@
 }
 
 .contacts__text {
-  @include label;
+  margin: 0;
+  padding: 20px 9px 20px 19px;
+
+  @include catalog-title;
 }
 
 .contacts__address {
+  margin: 0;
+  padding: 20px 20px 20px 10px;
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
@@ -53,6 +58,8 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
+  width: 180px;
 }
 
 .social__item {
@@ -70,12 +77,15 @@
 }
 
 .page-footer__copyright {
-  padding: 20px 0 40px 20px;
   font-size: 16px;
   font-family: $arial;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  width: 287px;
+  padding: 32px 0 0 19px;
   color: $special-dark-grey;
   fill: $social-gray;
 
@@ -89,7 +99,7 @@
 }
 
 .copyright__link-logo {
-  padding-left: 128px;
+  margin-top: -16px;
 
   &:active {
     fill: rgba($green, 0.3);
