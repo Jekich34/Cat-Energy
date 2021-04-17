@@ -6,6 +6,8 @@
 }
 
 .page-form-programs-choose__title {
+  padding: 150px 0 0 0;
+
   @include label;
   color: $special-dark-grey;
 }
@@ -20,27 +22,27 @@
 }
 
 .cat-name {
-  width: 194px;
+  width: 197px;
 }
 
 .cat-weight {
-  width: 172px;
+  width: 175px;
 }
 
 .cat-old {
-  width: 132px;
+  width: 135px;
 }
 
 .page-form-programs-choose__radio-wrapper {
   width: 320px;
-  margin: 25px 0 0 -20px;
+  margin: 26px 0 0 -20px;
   border: 1px solid $dark-grey;
   border-left: none;
   border-right: none;
 }
 
 .page-form-programs-choose__list {
-  margin: 0 0 -15px -40px;
+  margin: -3px 0 -14px -33px;
 
   @include label;
   color: $light-black;
@@ -53,6 +55,6 @@
 }
 
 .page-form-programs-choose__radio {
-  margin: 15px 30px 15px 5px;
+  margin: 15px 25px 15px 5px;
   border: none;
 }
