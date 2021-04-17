@@ -2,23 +2,24 @@
 
 .catalog-show-all {
   padding-left: 20px;
-  text-align: center;
   border-bottom: 1px solid $grayish;
 }
 
 .catalog-show-all__title {
-  margin: 80px 0 -5px 0;
+  margin: 79px 0 0 39px;
 
   @include catalog-title;
 }
 
 .catalog-show-all__text {
+  margin: 7px 0 0 29px;
+
   @include description-text;
   color: $blackish;
 }
 
 .catalog-show-all__button {
-  margin: 20px 0 25px 0;
+  margin: 21px 0 24px 0;
   color: $special-dark-grey;
   background-color: $grey;
 

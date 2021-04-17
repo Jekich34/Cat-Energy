@@ -1,26 +1,54 @@
 //Catalog
 
 .catalog__title {
-  padding: 0 20px 35px;
+  margin: 27px 0 0 0;
+  padding: 0 20px 40px;
 
   @include medium-title;
   border-bottom: 1px solid $grayish;
 }
 
+.catalog__list {
+  margin: 0;
+}
+
 .catalog__item {
+  position: relative;
   margin-left: -40px;
-  padding: 0 20px 25px 20px;
+  padding: 0 20px 24px 20px;
   border-bottom: 1px solid $grayish;
 }
 
+.catalog__link {
+  display: flex;
+}
+
 .catalog__link-title {
-  display: inline-block;
+  order: 2;
   width: 76px;
+  height: 40px;
+  margin-top: 20px;
 
   @include catalog-title;
   color: $light-black;
 }
 
 .catalog__description {
+  position: absolute;
+  top: 62px;
+  left: 160px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+
   @include description-text;
+}
+
+.catalog__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__text-definition {
+  align-items: flex-end;
 }

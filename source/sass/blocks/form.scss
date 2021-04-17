@@ -5,6 +5,9 @@
 }
 
 .form__title {
+  margin-top: 27px;
+  padding-bottom: 3px;
+
   @include medium-title;
 }
 
@@ -18,8 +21,7 @@
 }
 
 .form__text-bottom {
-  margin: 20px 0 30px 0;
+  margin: 20px 0 31px 62px;
   font-family: $arial;
-  text-align: center;
   text-transform: none;
 }
