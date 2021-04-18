@@ -35,13 +35,14 @@
 }
 
 .additional-products__button {
-  margin-bottom: 18px;
+  margin: 1px 0 17px 0;
 }
 
 .additional-products__offer-wrapper {
+  display: flex;
   width: 280px;
   height: 290px;
-  margin: 40px 0 40px 20px;
+  margin: 39px 0 34px 20px;
   font-size: 16px;
   line-height: 20px;
   font-family: $arial;
@@ -53,6 +54,7 @@
 }
 
 .additional-products__offer {
-  padding: 50px;
+  align-self: flex-end;
+  padding: 27px 58px;
   text-align: center;
 }

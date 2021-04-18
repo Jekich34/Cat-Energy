@@ -18,11 +18,21 @@
   line-height: 36px;
 }
 
+@mixin description-value {
+  font-size: 30px;
+  line-height: 37px;
+}
+
 @mixin description-inputs {
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
   color: $black;
+}
+
+@mixin cost-tablet-desktop {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @mixin title-tablet-desktop {
@@ -53,6 +63,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@mixin tablet-desktop-small {
+  font-size: 14px;
+  line-height: 14px;
 }
 
 @mixin description-text {

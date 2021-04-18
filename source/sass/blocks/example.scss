@@ -1,13 +1,28 @@
 //Example
 
 .example {
-  width: 280px;
   min-height: 660px;
   padding: 25px 20px 20px 20px;
   background-color: $hoar;
   background-image: url("../../img/before-mobile@1x.png");
   background-position: 0 376px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1000px;
+    padding: 25px 31px 20px 30px;
+    background-color: $white;
+    background-image: url("../../img/before-tablet@1x.png");
+    background-position: 46px 432px;
+    background-repeat: no-repeat;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .example__title {
@@ -15,11 +30,30 @@
   padding: 2px 0 18px 0;
 
   @include titie;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 48px 0;
+
+    @include title-tablet-desktop-big;
+  }
 }
 
 .example__text {
   font-family: $arial;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 680px;
+
+    @include title-tablet-desktop-description;
+  }
+}
+
+.example__results {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__list {
@@ -28,6 +62,11 @@
   justify-content: space-between;
   margin: 25px 0 0 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+    margin: 37px 0 0 0;
+  }
 }
 
 .example__value {
@@ -37,6 +76,14 @@
   line-height: 24px;
   text-transform: uppercase;
   border: 1px solid $less-gray;
+  border-radius: 2px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    padding: 14px 0 10px 0;
+
+    @include description-value;
+  }
 }
 
 .example__description {
@@ -49,12 +96,31 @@
   font-family: $arial;
   color: $special-dark-grey;
   background-color: $hoar;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin: -9px 11px 0 24px;
+    padding: 0 8px;
+
+    @include tablet-desktop-small;
+    background-color: $white;
+  }
 }
 
 .example__text-cost {
   margin-top: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    align-self: center;
+    width: 174px;
+    margin-top: 43px;
+    text-align: end;
+
+    @include cost-tablet-desktop;
+  }
 }
 
 .example__button-wrapper {
@@ -63,4 +129,8 @@
   justify-content: space-between;
   width: 200px;
   margin: 307px 0 0 42px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
