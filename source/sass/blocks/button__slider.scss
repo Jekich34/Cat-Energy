@@ -15,6 +15,13 @@
   }
 
   &:active {
-    border: none;
+    border-bottom: 1px solid rgba($black, 0);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+    font-weight: normal;
+
+    @include title-tablet-desktop-auto;
   }
 }
