@@ -8,7 +8,7 @@
 .page-body {
   width: 320px;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   color: $black;
   background-color: $white;
 
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
   }
 }
 
@@ -26,7 +26,7 @@
     background-image:
       url("../../img/index-can-desktop@1x.png"),
       url("../../img/index-background-desktop@1x.jpg");
-    background-position: 558px 140px, 720px 0;
+    background-position: 630px 140px, 792px 0;
     background-repeat: no-repeat, no-repeat;
   }
 }
