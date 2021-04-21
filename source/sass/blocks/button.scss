@@ -18,4 +18,8 @@
     color: rgba($white, 0.3%);
     background-color: $green-hover-active;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 208px;
+  }
 }

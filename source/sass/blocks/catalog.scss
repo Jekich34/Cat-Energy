@@ -1,15 +1,34 @@
 //Catalog
 
+.catalog {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 10px;
+  }
+}
+
 .catalog__title {
   margin: 27px 0 0 0;
   padding: 0 20px 40px;
 
   @include medium-title;
   border-bottom: 1px solid $grayish;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet-desktop-big ;
+    margin: 57px 0 0 0;
+    border: none;
+  }
 }
 
 .catalog__list {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 768px;
+  }
 }
 
 .catalog__item {
@@ -17,10 +36,29 @@
   margin-left: -40px;
   padding: 0 20px 24px 20px;
   border-bottom: 1px solid $grayish;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 324px;
+    height: 511px;
+    margin: 43px 80px 16px -20px;
+    padding: 40px;
+    background: linear-gradient(to top, $hoar 430px, $white 161px);
+    border: none;
+  }
 }
 
 .catalog__link {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-wrap: wrap;
+    width: 130px;
+  }
 }
 
 .catalog__link-title {
@@ -31,24 +69,73 @@
 
   @include catalog-title;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    text-align: center;
+
+    @include catalog-name-tablet-desktop;
+  }
 }
 
 .catalog__description {
   position: absolute;
   top: 62px;
   left: 160px;
-  display: flex;
-  justify-content: space-between;
   width: 140px;
 
   @include description-text;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 250px;
+
+    @include catalog-description-tablet-desktop;
+  }
 }
 
-.catalog__text {
+.catalog__text-value {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $social-gray;
+  }
 }
 
-.catalog__text-definition {
-  align-items: flex-end;
+//Catalog-show-all
+
+.catalog__show-all {
+  margin-left: -40px;
+  padding-left: 20px;
+  border-bottom: 1px solid $grayish;
+}
+
+.catalog__show-all-title {
+  margin: 79px 0 0 39px;
+
+  @include catalog-title;
+}
+
+.catalog__show-all-text {
+  margin: 7px 0 0 29px;
+
+  @include description-text;
+  color: $blackish;
+}
+
+.catalog__show-all-button {
+  margin: 21px 0 24px 0;
+  color: $special-dark-grey;
+  background-color: $grey;
+
+  &:hover {
+    background-color: $grayish;
+  }
+
+  &:active {
+    color: rgba($special-dark-grey, 0.3%);
+    background-color: $grayish;
+  }
 }
