@@ -35,6 +35,11 @@
   line-height: 30px;
 }
 
+@mixin catalog-name-tablet-desktop {
+  font-size: 20px;
+  line-height: 24px;
+}
+
 @mixin title-tablet-desktop {
   font-size: 20px;
   line-height: 20px;
@@ -63,6 +68,11 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@mixin catalog-description-tablet-desktop {
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @mixin tablet-desktop-small {

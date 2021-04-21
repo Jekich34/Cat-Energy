@@ -17,9 +17,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 525px;
-    margin: 0;
-    background-image: none;
+    height: 725px;
+    margin: -200px 0 0 0;
+    background-image:
+      url("../../img/index-can-desktop@1x.png"),
+      url("../../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to left, $green 720px, $white 252px);
+    background-position: 558px 143px, 720px 0, 0 -29px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
   }
 }
 
@@ -47,6 +52,10 @@
 
     @include title-tablet-desktop-big;
     color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 225px;
   }
 }
 
