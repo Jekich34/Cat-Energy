@@ -5,14 +5,35 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 53px 0 80px 68px;
+
+    @include medium-title;
+  }
 }
 
 .additional-products__item {
   margin: 0 20px 0 -20px;
+  padding: 0 0 5px 0;
   border-bottom: 1px solid $dark-grey;
 
-  &:nth-last-child(4) {
+  &:nth-child(1) {
     border-top: 1px solid $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    margin: 0 30px -1px -10px;
+    padding: 14px 37px 14px 37px;
+    border: 1px solid $dark-grey;
+  }
+}
+
+.additional-products__item-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -23,6 +44,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $light-black;
+
+  @media (min-width: $tablet-width) {
+    @include title-tablet-desktop;
+  }
 }
 
 .additional-products__text {
@@ -32,10 +57,25 @@
   line-height: 14px;
   font-family: $arial;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    @include catalog-title-arial;
+  }
+}
+
+.additional-products__price {
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    width: 93px;
+  }
 }
 
 .additional-products__button {
-  margin: 1px 0 17px 0;
+  margin: 5px 0 13px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 592px;
+  }
 }
 
 .additional-products__offer-wrapper {
@@ -43,18 +83,34 @@
   width: 280px;
   height: 290px;
   margin: 39px 0 34px 20px;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: $arial;
+
+  @include catalog-title-arial;
   color: $white;
   background-color: $green;
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    width: 708px;
+    height: 200px;
+    margin: 70px 0 75px 30px;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .additional-products__offer {
   align-self: flex-end;
   padding: 27px 58px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    width: 228px;
+    padding-top: 28px;
+    text-align: start;
+  }
 }
