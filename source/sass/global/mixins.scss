@@ -40,6 +40,11 @@
   line-height: 24px;
 }
 
+@mixin catalog-all-tablet-desktop {
+  font-size: 20px;
+  line-height: 22px;
+}
+
 @mixin title-tablet-desktop {
   font-size: 20px;
   line-height: 20px;
@@ -61,6 +66,12 @@
   line-height: 20px;
   font-family: $oswald;
   text-transform: uppercase;
+}
+
+@mixin catalog-title-arial {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $arial;
 }
 
 @mixin label {
