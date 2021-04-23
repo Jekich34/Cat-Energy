@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 0 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 72px 0 0 90px;
+  }
 }
 
 .catalog__title {
@@ -18,6 +22,10 @@
     margin: 57px 0 0 0;
     border: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 57px 0 1px 0;
+  }
 }
 
 .catalog__list {
@@ -28,6 +36,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
@@ -49,6 +61,12 @@
     padding: 40px;
     background: linear-gradient(to top, $hoar 430px, $white 161px);
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 43px 20px 20px -20px;
+    padding: 39px;
   }
 }
 
@@ -94,6 +112,11 @@
 
     @include catalog-description-tablet-desktop;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+    padding-bottom: 16px;
+  }
 }
 
 .catalog__text-value {
@@ -121,6 +144,10 @@
     text-align: center;
     background: $white;
     border: 2px solid $grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -20px;
   }
 }
 
