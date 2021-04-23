@@ -1,5 +1,17 @@
 //Additional-products
 
+.additional-products {
+  @media (min-width: $desktop-width) {
+    margin: 55px 0 73px 42px;
+  }
+}
+
+.additional-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .additional-products__title {
   margin: 25px 0 35px 20px;
   font-weight: normal;
@@ -10,6 +22,17 @@
     margin: 53px 0 80px 68px;
 
     @include medium-title;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.additional-products__list {
+  @media (min-width: $desktop-width) {
+    width: 894px;
+    margin-left: 28px;
   }
 }
 
@@ -28,12 +51,20 @@
     padding: 14px 37px 14px 37px;
     border: 1px solid $dark-grey;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 -1px 0;
+    padding: 10px 0 5px 0;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 .additional-products__item-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -48,6 +79,11 @@
   @media (min-width: $tablet-width) {
     @include title-tablet-desktop;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin: 15px 0 0 1px;
+  }
 }
 
 .additional-products__text {
@@ -61,12 +97,21 @@
   @media (min-width: $tablet-width) {
     @include catalog-title-arial;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4px;
+    width: 287px;
+  }
 }
 
 .additional-products__price {
   @media (min-width: $tablet-width) {
-    text-align: end;
     width: 93px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
@@ -76,7 +121,15 @@
   @media (min-width: $tablet-width) {
     width: 592px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 204px;
+    height: 20px;
+    margin: 5px 0;
+  }
 }
+
+//Additional-products__offer-wrapper
 
 .additional-products__offer-wrapper {
   display: flex;
@@ -100,6 +153,15 @@
     background-position: 0 0;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin: 14px 0 0 80px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .additional-products__offer {
@@ -112,5 +174,11 @@
     width: 228px;
     padding-top: 28px;
     text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    padding: 0 9px 26px 0;
+    text-align: center;
   }
 }
