@@ -40,86 +40,78 @@
     <section class="form">
       <h1 class="form__title">Подбор программы</h1>
       <form class="page-form" action="https://echo.htmlacademy.ru" method="post">
-        <section class="page-form-programs-choose">
-          <p class="page-form-programs-choose__disclaimer">
+        <section class="programs-choose">
+          <p class="programs-choose__disclaimer">
             Заполните анкету, и мы подберем<br>
             программу питания для вашего кота
           </p>
-          <p class="page-form-programs-choose__field">
-            <label class="page-form-programs-choose__title cat-name" for="cat-name">Имя:*</label>
-            <input class="page-form-programs-choose__value cat-name" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+          <p class="programs-choose__field">
+            <label class="programs-choose__title" for="cat-name">Имя:*</label>
+            <input class="programs-choose__value" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
           </p>
-          <p class="page-form-programs-choose__field">
-            <label class="page-form-programs-choose__title cat-weight" for="cat-weight">Вес (кг):*</label>
-            <input class="page-form-programs-choose__value cat-weight" type="text" name="cat-weight" placeholder="7" id="cat-weight">
+          <p class="programs-choose__field">
+            <label class="programs-choose__title" for="cat-weight">Вес (кг):*</label>
+            <input class="programs-choose__value" type="text" name="cat-weight" placeholder="7" id="cat-weight">
           </p>
-          <p class="page-form-programs-choose__field">
-            <label class="page-form-programs-choose__title cat-old" for="cat-old">Возраст (лет):*</label>
-            <input class="page-form-programs-choose__value cat-old" type="text" name="cat-old" placeholder="7" id="cat-old">
+          <p class="programs-choose__field">
+            <label class="programs-choose__title" for="cat-old">Возраст (лет):*</label>
+            <input class="programs-choose__value" type="text" name="cat-old" placeholder="7" id="cat-old">
           </p>
-          <div class="page-form-programs-choose__radio-wrapper">
-            <fieldset class="page-form-programs-choose__radio">
+          <div class="programs-choose__radio-wrapper">
+            <fieldset class="programs-choose__radio">
               <h3 class="visually-hidden">Выбор програмы</h3>
-              <ul class="page-form-programs-choose__list">
-                <li class="page-form-programs-choose__item">
-                  <input class="page-form-programs-choose__radio" type="radio" name="programs-choose" checked>
-                  <label class="page-form-programs-choose__label">Похудение</label>
+              <ul class="programs-choose__list">
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" checked id="cat-slim">
+                  <label class="programs-choose__label" for="cat-slim">Похудение</label>
                 </li>
-                <li class="page-form-programs-choose__item">
-                  <label class="page-form-programs-choose__label">
-                    <input class="page-form-programs-choose__radio" type="radio" name="programs-choose">Набор массы
-                  </label>
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="cat-mass">
+                  <label class="programs-choose__label" for="cat-mass">Набор массы</label>
                 </li>
-                <li class="page-form-programs-choose__item">
-                  <label class="page-form-programs-choose__label">
-                    <input class="page-form-programs-choose__radio" type="radio" name="programs-choose">Не знаю (Нужен ваш совет)
-                  </label>
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="advice">
+                  <label class="programs-choose__label" for="advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
         </section>
         <section class="contacts">
-          <legend class="contacts__title title">Контактные данные<br>(владельца кота)</legend>
-          <p>
-            <label class="contacts__list email-list">E-mail:*
-              <input class="contacts__item email-item" type="email" name="email" placeholder="kuklachev@gmail.com">
-            </label>
+          <legend class="contacts__title">Контактные данные<br>(владельца кота)</legend>
+          <p class="contacts__list">
+            <label class="contacts__value" for="email-value">E-mail:*</label>
+            <input class="contacts__item" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-value">
           </p>
-          <p>
-            <label class="contacts__list phone-list">Телефон:*
-              <input class="contacts__item phone-item" type="phone" name="phone" placeholder="8 (960) 900-60-90">
-            </label>
+          <p class="contacts__list">
+            <label class="contacts__value" id="phone-value">Телефон:*</label>
+            <input class="contacts__item" type="phone" name="phone" placeholder="8 (960) 900-60-90" id="phone-value">
           </p>
         </section>
         <section class="comment">
-          <legend class="comment__title title">Комментарий</legend>
+          <legend class="comment__title">Комментарий</legend>
           <textarea class="comment__item" name="comment"
-            placeholder="Расскажите о повадках кота"></textarea>
+            placeholder="Расскажите о всех повадках кота"></textarea>
         </section>
         <section class="additionally">
-          <fieldset class="additionally__information">
-            <legend class="additionally__information-caption title">Дополнительно</legend>
-            <ul class="additionally__information-list">
-              <li class="additionally__information-item">
-                <label class="additionally__information-label">
-                  <input class="additionally__information-checkbox" type="checkbox" name="sweetener" checked>Сахарозаменитель
-                </label>
+          <fieldset class="additionally__products">
+            <legend class="additionally__products-caption">Дополнительно</legend>
+            <ul class="additionally__products-list">
+              <li class="additionally__products-item">
+                <input class="visually-hidden additionally__products-checkbox additionally__products-checkbox-filter" type="checkbox" name="sweetener" checked id="sweetener">
+                <label class="additionally__products-label" for="sweetener">Сахарозаменитель</label>
               </li>
-              <li class="additionally__information-item">
-                <label class="additionally__information-label">
-                  <input class="additionally__information-checkbox" type="checkbox" name="water">Питьевая вода
-                </label>
+              <li class="additionally__products-item">
+                <input class="visually-hidden additionally__products-checkbox additionally__products-checkbox-filter" type="checkbox" name="water" id="water">
+                <label class="additionally__products-label" for="water">Питьевая вода</label>
               </li>
-              <li class="additionally__information-item">
-                <label class="additionally__information-label">
-                  <input class="additionally__information-checkbox" type="checkbox" name="milk">Молоко
-                </label>
+              <li class="additionally__products-item">
+                <input class="visually-hidden additionally__products-checkbox additionally__products-checkbox-filter" type="checkbox" name="milk" id="milk">
+                <label class="additionally__products-label" for="milk">Молоко</label>
               </li>
-              <li class="additionally__information-item">
-                <label class="additionally__information-label">
-                  <input class="additionally__information-checkbox" type="checkbox" name="vitamins">Витамины
-                </label>
+              <li class="additionally__products-item">
+                <input class="visually-hidden additionally__products-checkbox additionally__products-checkbox-filter" type="checkbox" name="vitamins" id="vitamins">
+                <label class="additionally__products-label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>

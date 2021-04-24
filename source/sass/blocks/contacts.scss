@@ -11,14 +11,20 @@
 }
 
 .contacts__list {
-  margin: 0 0 0 -20px;
+  display: flex;
+  margin-left: 1px;
+}
+
+.contacts__value {
+  margin: 13px 0 0 -20px;
 
   @include label;
   color: $special-dark-grey;
 }
 
 .contacts__item {
-  margin: 3px -20px -2px 10px;
+  flex-grow: 1;
+  margin: 3px 20px -2px 10px;
   padding: 12px 50px 12px 15px;
 
   @include label;
@@ -26,12 +32,4 @@
   font-family: $oswald;
   border: 1px solid $low-grey;
   border-radius: 0;
-}
-
-.email-item {
-  width: 150px;
-}
-
-.phone-item {
-  width: 135px;
 }
