@@ -4,6 +4,12 @@
   margin: 27px 0 38px -2px;
 
   @include description-inputs;
+
+  @media (min-width: $tablet-width) {
+    margin: 65px 0 76px -4px;
+
+    @include medium-title;
+  }
 }
 
 .comment__item {
@@ -14,4 +20,12 @@
   @include border;
   @include label;
   font-family: $oswald;
+
+  @media (min-width: $tablet-width) {
+    min-width: 594px;
+    min-height: 154px;
+    padding: 9px 17px;
+
+    @include cost-tablet-desktop;
+  }
 }
