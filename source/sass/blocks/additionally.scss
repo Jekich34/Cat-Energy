@@ -3,12 +3,22 @@
 .additionally__products {
   margin: 20px 0 13px 2px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 62px 0 14px 1px;
+  }
 }
 
 .additionally__products-caption {
   margin: 0 0 16px -15px;
 
   @include description-inputs;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 37px -15px;
+
+    @include medium-title;
+  }
 }
 
 .additionally__products-list {
@@ -16,20 +26,27 @@
 
   @include label;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include title-tablet-desktop-auto;
+  }
 }
 
 .additionally__products-item {
   & .additionally__products-label {
     position: relative;
     display: block;
-    padding: 4px 0 5px 0;
+    width: 162px;
+    padding: 4px 76px 5px 0;
     cursor: pointer;
   }
 }
 
 .additionally__products-checkbox {
-  margin: 15px 25px 14px -2px;
-
   &:disabled + .additionally__products-label {
     opacity: 0.3;
   }
@@ -44,6 +61,13 @@
     width: 28px;
     height: 28px;
     border: 1px solid $less-gray;
+
+    @media (min-width: $tablet-width) {
+      top: -7px;
+      left: -59px;
+      width: 38px;
+      height: 38px;
+    }
   }
 
   & + .additionally__products-label:hover::before {
@@ -60,9 +84,17 @@
     background-image: url("../../img/icon-check-mark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      left: -48px;
+    }
   }
 }
 
 .additionally__products-label {
-  margin: 15px 25px 14px -5px;
+  margin: 15px 0 14px -5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0 30px 7px;
+  }
 }
