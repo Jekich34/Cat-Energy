@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     margin: 57px 47px 0 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 69px 0 0 112px;
+  }
 }
 
 .form__title {
@@ -19,11 +23,19 @@
 
     @include title-tablet-desktop-big;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 27px 0 48px -1px;
+  }
 }
 
-.form-buttom__wrapper {
+.form-bottom__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 21px 0 0 -2px;
   }
 }
 
@@ -41,6 +53,10 @@
 
     @include title-tablet-desktop-auto;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 568px;
+  }
 }
 
 .form__text-bottom {
@@ -52,5 +68,9 @@
     margin: 16px 0 92px 63px;
 
     @include catalog-description-tablet-desktop;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 18px 0 92px 82px;
   }
 }

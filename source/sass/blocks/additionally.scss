@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     margin: 62px 0 14px 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 64px 0 14px 1px;
+  }
 }
 
 .additionally__products-caption {
@@ -20,6 +24,8 @@
     @include medium-title;
   }
 }
+
+//Additionally__products-list
 
 .additionally__products-list {
   margin: 7px 0 7px 0;
@@ -43,6 +49,10 @@
     width: 162px;
     padding: 4px 76px 5px 0;
     cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 291px;
   }
 }
 
@@ -96,5 +106,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 15px 0 30px 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 15px 0 30px 6px;
   }
 }
