@@ -45,46 +45,52 @@
             Заполните анкету, и мы подберем<br>
             программу питания для вашего кота
           </p>
-          <p class="programs-choose__field">
-            <label class="programs-choose__title" for="cat-name">Имя:*</label>
-            <input class="programs-choose__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
-          </p>
-          <p class="programs-choose__field">
-            <label class="programs-choose__title" for="cat-weight">Вес (кг):*</label>
-            <input class="programs-choose__input" type="text" name="cat-weight" placeholder="7" id="cat-weight">
-          </p>
-          <p class="programs-choose__field">
-            <label class="programs-choose__title" for="cat-old">Возраст (лет):*</label>
-            <input class="programs-choose__input" type="text" name="cat-old" placeholder="7" id="cat-old">
-          </p>
-          <fieldset class="programs-choose__radio-wrapper">
-            <h3 class="visually-hidden">Выбор програмы</h3>
-            <ul class="programs-choose__list">
-              <li class="programs-choose__item">
-                <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" checked id="cat-slim">
-                <label class="programs-choose__label" for="cat-slim">Похудение</label>
-              </li>
-              <li class="programs-choose__item">
-                <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="cat-mass">
-                <label class="programs-choose__label" for="cat-mass">Набор массы</label>
-              </li>
-              <li class="programs-choose__item">
-                <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="advice">
-                <label class="programs-choose__label" for="advice">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="programs-choose-wrapper">
+            <div class="programs-choose__field-wrapper">
+              <p class="programs-choose__field">
+                <label class="programs-choose__title" for="cat-name">Имя:*</label>
+                <input class="programs-choose__input" type="text" name="cat-name" placeholder="Барсик" id="cat-name">
+              </p>
+              <p class="programs-choose__field">
+                <label class="programs-choose__title" for="cat-weight">Вес (кг):*</label>
+                <input class="programs-choose__input" type="text" name="cat-weight" placeholder="7" id="cat-weight">
+              </p>
+              <p class="programs-choose__field">
+                <label class="programs-choose__title" for="cat-old">Возраст (лет):</label>
+                <input class="programs-choose__input" type="text" name="cat-old" placeholder="7" id="cat-old">
+              </p>
+            </div>
+            <fieldset class="programs-choose__radio-wrapper">
+              <h3 class="visually-hidden">Выбор програмы</h3>
+              <ul class="programs-choose__list">
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" checked id="cat-slim">
+                  <label class="programs-choose__label" for="cat-slim">Похудение</label>
+                </li>
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="cat-mass">
+                  <label class="programs-choose__label" for="cat-mass">Набор массы</label>
+                </li>
+                <li class="programs-choose__item">
+                  <input class="visually-hidden programs-choose__radio programs-choose__radio-filter" type="radio" name="programs-choose" id="advice">
+                  <label class="programs-choose__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
         </section>
         <section class="contacts">
           <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-          <p class="contacts__list">
-            <label class="contacts__label" for="email-value">E-mail:*</label>
-            <input class="contacts__input" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-value">
-          </p>
-          <p class="contacts__list">
-            <label class="contacts__label" for="phone-value">Телефон:*</label>
-            <input class="contacts__input" type="phone" name="phone" placeholder="8 (960) 900-60-90" id="phone-value">
-          </p>
+          <div class="contacts__list-wrapper">
+            <p class="contacts__list">
+              <label class="contacts__label" for="email-value">E-mail:*</label>
+              <input class="contacts__input" type="email" name="email" placeholder="kuklachev@gmail.com" id="email-value">
+            </p>
+            <p class="contacts__list">
+              <label class="contacts__label" for="phone-value">Телефон:*</label>
+              <input class="contacts__input" type="phone" name="phone" placeholder="8 (960) 900-60-90" id="phone-value">
+            </p>
+          </div>
         </section>
         <section class="comment">
           <legend class="comment__title">Комментарий</legend>
@@ -114,7 +120,7 @@
             </ul>
           </fieldset>
         </section>
-        <div class="form-buttom__wrapper">
+        <div class="form-bottom__wrapper">
           <button class="form-button button" type="submit">Отправить заявку</button>
           <p class="form__text-bottom">* — Обязательные поля</p>
         </div>
@@ -132,8 +138,8 @@
         </p>
         <p class="address__value">
           ул. Большая<br>
-          Конюшенная, д. 19/8<br>
-          Санкт-Петербург
+          Конюшенная, д. 19/8
+          <span class="address__value-city">Санкт-Петербург</span>
         </p>
       </div>
       <div class="address__map">

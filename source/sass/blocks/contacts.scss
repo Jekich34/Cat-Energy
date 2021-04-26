@@ -2,6 +2,10 @@
 
 .contacts {
   margin: 24px 0 0 19px;
+
+  @media (min-width: $desktop-width) {
+    margin: -26px 0 -18px 19px;
+  }
 }
 
 .contacts__title {
@@ -18,12 +22,24 @@
   }
 }
 
+.contacts__list-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}
+
 .contacts__list {
   display: flex;
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 

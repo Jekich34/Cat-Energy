@@ -28,4 +28,9 @@
 
     @include cost-tablet-desktop;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1184px;
+    margin: 0 0 0 -2px;
+  }
 }
