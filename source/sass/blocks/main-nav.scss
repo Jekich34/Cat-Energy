@@ -4,6 +4,9 @@
   position: relative;
 }
 
+//Выпадающее меню {
+
+//Кнопка
 .main-nav__toggle {
   position: absolute;
   top: -70px;
@@ -21,6 +24,7 @@
   }
 }
 
+//Состояние кнопки при закрытом меню
 .main-nav--closed {
   & .main-nav__toggle::before {
     content: "";
@@ -41,20 +45,26 @@
   }
 }
 
+//На случай если скрипт не сработает
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .main-nav__item {
-    display: none;
+  .main-nav--closed {
+    & .main-nav__item {
+      display: none;
+    }
   }
 
-  .main-nav--nojs .main-nav__toggle {
-    display: none;
-  }
+  .main-nav--nojs {
+    & .main-nav__toggle {
+      display: none;
+    }
 
-  .main-nav--nojs .main-nav__item {
-    display: block;
+    & .main-nav__item {
+      display: block;
+    }
   }
 }
 
+//Состояние кнопки при открытом меню
 .main-nav--opened {
   & .main-nav__toggle {
     &::before,
@@ -83,6 +93,8 @@
   }
 }
 
+// } Выпадающее меню
+
 .main-nav__list {
   margin: -4px 0 0 0;
   padding: 0;
@@ -109,12 +121,12 @@
   text-transform: uppercase;
   border-top: 1px solid $light-gray;
 
-  &:last-child {
-    border-bottom: 1px solid $light-gray;
-  }
-
   a {
     color: $black;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $light-gray;
   }
 
   @media (min-width: $tablet-width) {
@@ -159,11 +171,11 @@
 
     &.main-nav__item--active {
       border-bottom: 2px solid $white;
+    }
 
-      &:active {
-        opacity: 0.3;
-        border-bottom: 2px solid rgba($white, 0);
-      }
+    &:active {
+      opacity: 0.3;
+      border-bottom: 2px solid rgba($white, 0);
     }
   }
 }

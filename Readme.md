@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Самир Поладов](https://up.htmlacademy.ru/adaptive/20/user/1487923).
-* Наставник: `Неизвестно`.
+* Студент: [Михайлюкович Евгений](https://github.com/Jekich34/Cat-Energy).
+* Наставник: `Евгений Михайлюкович`.
 
 ---
 
@@ -24,7 +24,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`,
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий](https://github.com/htmlacademy-adaptive/1487923-cat-energy-20) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/My-little-work/Cat-Energy) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из My-little-work будет скопирован в ваш аккаунт.
 
 <img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808133-3a7ace00-a190-11e9-9d29-401b02036a9c.jpg">
 
