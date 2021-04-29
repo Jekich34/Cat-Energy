@@ -72,10 +72,12 @@
 
 .catalog__link {
   display: flex;
+  min-height: 140px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
-    width: 130px;
+    width: 340px;
+    min-height: auto;
   }
 }
 
@@ -91,9 +93,21 @@
   @media (min-width: $tablet-width) {
     width: 130px;
     text-align: center;
-    margin: 0 0 4px 0;
+    margin: 0 auto;
 
     @include catalog-name-tablet-desktop;
+  }
+}
+
+.catalog__link-image {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    margin: 0 0 19px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0 0 35px 48px;
   }
 }
 

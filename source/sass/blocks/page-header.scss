@@ -24,9 +24,22 @@
 }
 
 .page-header__image {
-  padding: 10px 45px 16px 20px;
+  padding: 10px 110px 16px 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding: 2px 0 0 0;
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__image--border {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $dark-grey;
   }
 }
