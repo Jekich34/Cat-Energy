@@ -1,10 +1,11 @@
 .promo {
+  min-height: 100%;
   margin: -30px 0 30px 0;
   background-image:
     url("../../img/index-can-mobile@1x.png"),
     url("../../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to bottom, $green 305px, $white 252px);
-  background-position: 20px 166px, 0 0, 0 0;
+    linear-gradient(to bottom, $green 63%, $white 37%);
+  background-position: 50% 80%, 50% 0, 50% 0;
   background-repeat: no-repeat, no-repeat;
 
   @media (min-width: $tablet-width) {
