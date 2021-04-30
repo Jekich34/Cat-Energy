@@ -1,50 +1,100 @@
 //Footer
 
-.address {
+// -Блок адрес- //
+
+//Обертка адреса
+.address-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 8px 0 6px 0;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    height: 200px;
+    margin: 0;
+    padding: 38px 40px 28px 40px;
+    background-color: $white;
   }
 }
 
+//Замена фона для каталога и формы
 .address-catalog-form {
   background-color: $grey;
 }
 
+//Текст с приглашением
 .address__text {
+  width: 130px;
   margin: 0;
-  padding: 20px 8px 20px 19px;
+  padding: 20px 10px 20px 19px;
 
   @include catalog-title;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 30px 30px 30px 32px;
+
+    @include catalog-name-tablet-desktop;
+  }
 }
 
+//Непосредственно сам адрес
 .address__value {
   width: 140px;
   margin: 0;
-  padding: 20px 20px 20px 8px;
+  padding: 20px 20px 20px 10px;
   font-size: 14px;
   line-height: 20px;
   font-family: $arial;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 31px 30px 30px;
+    text-align: end;
+
+    @include catalog-title-arial;
+  }
 }
+
+//Позиционирование названия города
+.address__value-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 19px;
+  }
+}
+
+// -Блок адрес- //
+
+// -Карта- //
 
 .address__map {
-  height: 362px;
+  min-height: 362px;
+  margin: 0 0 -3px 0;
 }
 
+// -Карта- //
+
+// -Футер-футера- //
+
+//Контейнер футер-футера
 .footer-bottom__container {
   width: 320px;
   min-height: 236px;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    min-height: 140px;
+    padding: 60px 30px 30px 30px;
+  }
 }
 
+//Логотип сайта
 .page-footer__logo {
   display: inline-block;
-  margin: 40px 96px 30px;
+  margin: 40px 96px 29px;
 
   &:hover {
     opacity: 0.8;
@@ -53,25 +103,45 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
+//Обертка социальных сетей
 .page-footer__social {
-  margin: -3px 20px;
+  margin: -2px 20px;
   padding: 0;
   border: 1px solid $dark-grey;
   border-left: none;
   border-right: none;
+
+  @media (min-width: $tablet-width) {
+    margin: -15px 0 0 23px;
+    border: none;
+  }
 }
 
+//Список социальных сетей
 .social__list {
   display: flex;
   flex-wrap: wrap;
   width: 180px;
+  padding: 4px 0 0 50px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 159px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
+//Пункты списка социальных сетей
 .social__item {
   width: 10px;
-  margin: 7px 25px;
+  margin: 7px 24px 2px;
   fill: $social-gray;
 
   &:hover {
@@ -81,13 +151,47 @@
   &:active {
     fill: rgba($green, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 14px 14px;
+  }
 }
 
+//Иконка Вконтакте
+.social__link--vkontakte {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+//Иконка Instagram
+.social__link--instagram {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+//Иконка Facebook
+.social__link--facebook {
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 27px;
+  }
+}
+
+//Контейнер копирайта
 .page-footer__copyright {
   font-size: 16px;
   font-family: $arial;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+  }
 }
 
+//Ссылка опирайта
 .copyright__link {
   display: flex;
   justify-content: space-between;
@@ -103,12 +207,26 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin: 2px 0 0 0;
+    padding: 0;
+  }
 }
 
+//Логотип копирайта
 .copyright__link-logo {
   margin-top: -16px;
 
   &:active {
     fill: rgba($green, 0.3);
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -16px;
+    padding: 0;
+  }
 }
+
+// -Футер-футера- //
