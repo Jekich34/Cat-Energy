@@ -8,6 +8,11 @@
   background-position: 0 385px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/before-mobile@2x.png");
+    background-size: contain;
+  }
+
   @media (min-width: $tablet-width) {
     min-height: 1017px;
     padding: 25px 31px 20px 30px;
@@ -30,6 +35,11 @@
     background-image: url("../../img/before-tablet@1x.png");
     background-position: 16px 406px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/before-tablet@2x.png");
+      background-size: contain;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +48,11 @@
     background-image: url("../../img/before-desktop@1x.png");
     background-position: 570px 4px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/before-desktop@2x.png");
+      background-size: contain;
+    }
   }
 }
 

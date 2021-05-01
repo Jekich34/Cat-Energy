@@ -1,5 +1,12 @@
 //Footer
 
+//Обертка всего футера
+.page-footer__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 // -Блок адрес- //
 
 //Обертка адреса
@@ -13,11 +20,25 @@
     padding: 38px 40px 28px 40px;
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
+  }
 }
 
 //Замена фона для каталога и формы
 .address-catalog-form {
   background-color: $grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }
 
 //Текст с приглашением
@@ -34,6 +55,10 @@
 
     @include catalog-name-tablet-desktop;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 30px 30px 36px;
+  }
 }
 
 //Непосредственно сам адрес
@@ -47,10 +72,16 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    width: 50%;
     padding: 27px 31px 30px 30px;
     text-align: end;
 
     @include catalog-title-arial;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 31px 30px 47px;
+    text-align: start;
   }
 }
 
@@ -89,6 +120,11 @@
     min-height: 140px;
     padding: 60px 30px 30px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 65px 110px 60px 110px;
+  }
 }
 
 //Логотип сайта
@@ -111,14 +147,14 @@
 
 //Обертка социальных сетей
 .page-footer__social {
-  margin: -2px 20px;
+  margin: -2px 20px 0;
   padding: 0;
   border: 1px solid $dark-grey;
   border-left: none;
   border-right: none;
 
   @media (min-width: $tablet-width) {
-    margin: -15px 0 0 23px;
+    margin: 0;
     border: none;
   }
 }
@@ -126,22 +162,22 @@
 //Список социальных сетей
 .social__list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  width: 180px;
-  padding: 4px 0 0 50px;
+  width: 142px;
+  margin: 4px auto;
+  padding: 10px 0 3px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    width: 159px;
-    margin: 0;
+    width: 150px;
+    margin: -11px 0 0 21px;
     padding: 0;
   }
 }
 
 //Пункты списка социальных сетей
 .social__item {
-  width: 10px;
-  margin: 7px 24px 2px;
+  margin: 10px;
   fill: $social-gray;
 
   &:hover {
@@ -150,10 +186,6 @@
 
   &:active {
     fill: rgba($green, 0.3);
-  }
-
-  @media (min-width: $tablet-width) {
-    margin: 14px 14px;
   }
 }
 
@@ -178,6 +210,7 @@
   @media (min-width: $tablet-width) {
     width: 22px;
     height: 27px;
+    margin: -3px 2px 0 -3px;
   }
 }
 
@@ -196,7 +229,7 @@
   display: flex;
   justify-content: space-between;
   width: 287px;
-  padding: 32px 0 0 19px;
+  padding: 30px 0 0 20px;
   color: $special-dark-grey;
   fill: $social-gray;
 
