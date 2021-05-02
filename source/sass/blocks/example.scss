@@ -10,7 +10,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/before-mobile@2x.png");
-    background-size: contain;
+    background-size: 311px auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -38,7 +38,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/before-tablet@2x.png");
-      background-size: contain;
+      background-size: 690px auto;
     }
   }
 
@@ -51,7 +51,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/before-desktop@2x.png");
-      background-size: contain;
+      background-size: 690px auto;
     }
   }
 }
