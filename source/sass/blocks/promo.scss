@@ -13,7 +13,7 @@
       url("../../img/index-can-mobile@2x.png"),
       url("../../img/index-background-mobile@2x.jpg"),
       linear-gradient(to bottom, $green 63%, $white 37%);
-    background-size: contain;
+    background-size: 280px auto, 320px auto, contain;
   }
 
   @media (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/index-can-tablet@2x.jpg");
-      background-size: contain;
+      background-size: 709px auto;
     }
   }
 
@@ -44,7 +44,7 @@
         url("../../img/index-can-desktop@2x.png"),
         url("../../img/index-background-desktop@2x.jpg"),
         linear-gradient(to left, $green 50%, $white 50%);
-      background-size: contain;
+      background-size: 552px auto, 720px auto, contain;
     }
   }
 }

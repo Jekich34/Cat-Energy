@@ -9,16 +9,48 @@
 }
 
 .contacts__title {
-  width: 185px;
+  display: flex;
   margin: 26px 0 32px -22px;
 
   @include description-inputs;
 
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 99px;
+    height: 2px;
+    margin: 16px -2px 0 0;
+    background-color: $green;
+  }
+
   @media (min-width: $tablet-width) {
-    width: auto;
     margin: 75px 0 76px -23px;
 
     @include medium-title;
+
+    &::after {
+      margin: 22px -49px 0 43px;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      margin: 22px 39px 0 -68px;
+      background-color: $green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      margin: 22px -2px 0 41px;
+    }
+
+    &::before {
+      width: 70px;
+      margin: 22px 40px 0 -110px;
+    }
   }
 }
 

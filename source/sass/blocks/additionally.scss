@@ -13,15 +13,50 @@
   }
 }
 
-.additionally__products-caption {
+.additionally__products-title {
+  display: flex;
   margin: 0 0 16px -15px;
 
   @include description-inputs;
 
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 136px;
+    height: 2px;
+    margin: 15px -2px 0 24px;
+    background-color: $green;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 100%;
     margin: 0 0 37px -15px;
 
     @include medium-title;
+
+    &::after {
+      margin: 22px -71px 0 42px;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      margin: 22px 39px 0 -68px;
+      background-color: $green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      margin: 22px -24px 0 41px;
+    }
+
+    &::before {
+      width: 70px;
+      margin: 22px 40px 0 -110px;
+    }
   }
 }
 

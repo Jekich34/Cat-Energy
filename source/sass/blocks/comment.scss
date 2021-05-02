@@ -1,14 +1,48 @@
 //Comment
 
 .comment__title {
+  display: flex;
   margin: 27px 0 38px -2px;
 
   @include description-inputs;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 99px;
+    height: 2px;
+    margin: 15px -2px 0 22px;
+    background-color: $green;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 65px 0 76px -4px;
 
     @include medium-title;
+
+    &::after {
+      margin: 22px -48px 0 41px;
+    }
+
+    &::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      margin: 22px 39px 0 -68px;
+      background-color: $green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      margin: 22px -2px 0 42px;
+    }
+
+    &::before {
+      width: 70px;
+      margin: 22px 40px 0 -110px;
+    }
   }
 }
 
