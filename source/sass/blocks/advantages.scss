@@ -1,13 +1,17 @@
 //Advantages
 
+// -"Как это работает"- //
+
+//Контейнер "Как это работает"
 .advantages {
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 
   @media (min-width: $desktop-width) {
     margin: 57px 0 0 80px;
   }
 }
 
+//Заголовок
 .advantages__title {
   margin: 25px 0 40px 20px;
 
@@ -21,26 +25,101 @@
   }
 }
 
+//Список преимущест
 .advantages__list {
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 185px 0 0 -10px;
-    padding-bottom: 102px;
+    margin: 0 0 0 30px;
+    padding: 185px 0 102px 0;
     border-bottom: 1px solid $light-gray;
+    background-image:
+      url("../../img/one.svg"),
+      url("../../img/two.svg"),
+      url("../../img/three.svg"),
+      url("../../img/four.svg");
+    background-position: 125px 72px, 505px 72px, 125px 387px, 508px 387px;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
     border: none;
+    background-position: 126px 70px, 449px 70px, 775px 70px, 1100px 70px;
   }
 }
 
+//Отдельный пункт преимуществ
 .advantages__item {
-  padding: 0 25px 27px 60px;
+  display: flex;
+  padding: 2px 25px 21px 0;
   font-family: $arial;
   color: $special-dark-grey;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    margin: -3px 20px 0 -20px;
+    background-color: $green;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &:nth-child(1) {
+    &::before {
+      background-image: url("../../img/advantage-leaf@1x.png");
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../../img/advantage-powder@1x.png");
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url("../../img/advantage-dining@1x.png");
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      background-image: url("../../img/advantage-clock@1x.png");
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    &:nth-child(1) {
+      &::before {
+        background-image: url("../../img/advantage-leaf@2x.png");
+        background-size: 30px auto;
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        background-image: url("../../img/advantage-powder@2x.png");
+        background-size: 29px auto;
+      }
+    }
+
+    &:nth-child(3) {
+      &::before {
+        background-image: url("../../img/advantage-dining@2x.png");
+        background-size: 25px auto;
+      }
+    }
+
+    &:nth-child(4) {
+      &::before {
+        background-image: url("../../img/advantage-clock@2x.png");
+        background-size: 32px auto;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
@@ -52,6 +131,13 @@
     &:nth-child(3),
     &:nth-child(4) {
       padding-top: 245px;
+    }
+
+    &::before {
+      content: "";
+      width: 80px;
+      height: 80px;
+      margin: -113px -80px 0 0;
     }
   }
 
@@ -75,3 +161,5 @@
     }
   }
 }
+
+// -"Как это работает"- //
