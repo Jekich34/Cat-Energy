@@ -1,5 +1,6 @@
 //Programs
 
+//Список программ
 .programs__list {
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -10,7 +11,9 @@
   }
 }
 
+//Пункт списка
 .programs__item {
+  position: relative;
   width: 240px;
   margin: 0 20px 20px -20px;
   padding: 20px;
@@ -33,19 +36,45 @@
   }
 }
 
+//Заголовок программы
 .programs__title {
+  display: flex;
   margin: 0;
-  padding: 10px 0 16px 70px;
+  padding: 11px 0 16px 70px;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 24px;
+      left: 22px;
+      width: 50px;
+      height: 50px;
+      background-color: $green;
+      border-radius: 50%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 0 9px 0;
 
     @include medium-title;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 92px;
+      right: 61px;
+      width: 200px;
+      height: 200px;
+      background-color: $green;
+      border-radius: 50%;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +82,69 @@
   }
 }
 
+//Иконка для программы "похудения"
+.programs__title-slim {
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 22px;
+      left: 29px;
+      width: 36px;
+      height: 50px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 81px;
+      right: 90px;
+      width: 140px;
+      height: 192px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//Иконка для программы "набора массы"
+.programs__title-mass {
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 36px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../../img/icon-cat-mass.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 135px;
+      right: 27px;
+      width: 268px;
+      height: 112px;
+      background-image: url("../../img/icon-cat-mass.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+//Описание программы (общее)
 .programs__description {
   margin-bottom: 21px;
   padding-bottom: 20px;
@@ -60,6 +152,7 @@
   border-bottom: 1px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
+    //position: absolute;
     padding-bottom: 38px;
 
     @include title-tablet-desktop-description;
@@ -71,6 +164,7 @@
   }
 }
 
+//Описание конкретной программы (похудение)
 .programs__description-slim {
   @media (min-width: $tablet-width) {
     width: 377px;
@@ -81,6 +175,7 @@
   }
 }
 
+//Описание конкретной программы (набор массы)
 .programs__description-mass {
   @media (min-width: $tablet-width) {
     width: 342px;
@@ -91,17 +186,37 @@
   }
 }
 
+//Ссылка выбора программы
 .programs__catalog {
+  display: flex;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $black;
 
   &:active {
-    color: rgba($black, 0.3%);
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 10px;
+    margin: 2px 0 0 18px;
+    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::after {
+      margin-top: 3px;
+      background-image: url("../../img/icon-right-arrow-verylong.svg");
+    }
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: -1px;
+
     @include title-tablet-desktop-auto;
   }
 }
