@@ -1,17 +1,22 @@
 //Additional-products
 
+// -Дополнительные товары- //
+
+//Контейнер дополнительных товаров
 .additional-products {
   @media (min-width: $desktop-width) {
     margin: 55px 0 73px 42px;
   }
 }
 
+//Обертка дополнительных товаров
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
+//Зоголовок "Дополнительные товары"
 .additional-products__title {
   display: flex;
   margin: 25px 0 35px 20px;
@@ -51,16 +56,17 @@
     margin-bottom: 66px;
 
     &::after {
-      margin: 22px 8px 0 36px;
+      margin: 23px 1px 0 36px;
     }
 
     &::before {
       width: 70px;
-      margin: 22px 40px 0 -50px;
+      margin: 22px 41px 0 -42px;
     }
   }
 }
 
+//Список доплнительных товаров
 .additional-products__list {
   @media (min-width: $desktop-width) {
     width: 894px;
@@ -68,6 +74,7 @@
   }
 }
 
+//Конкретный товар
 .additional-products__item {
   margin: 0 20px 0 -20px;
   padding: 0 0 5px 0;
@@ -92,6 +99,7 @@
   }
 }
 
+//Обертка конкретного товара
 .additional-products__item-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -100,6 +108,7 @@
   }
 }
 
+//Название конкретного товара
 .additional-products__label {
   margin: 13px 0 -1px 1px;
   font-weight: normal;
@@ -118,9 +127,11 @@
   }
 }
 
+//Обертка харктеристики и цены товара
 .additional-products__text {
   display: flex;
   justify-content: space-between;
+  padding: 1px 0 0 0;
   font-size: 14px;
   line-height: 14px;
   font-family: $arial;
@@ -136,6 +147,7 @@
   }
 }
 
+//Цена товара
 .additional-products__price {
   @media (min-width: $tablet-width) {
     width: 93px;
@@ -147,8 +159,9 @@
   }
 }
 
+//Кнопка "Заказать"
 .additional-products__button {
-  margin: 5px 0 13px 0;
+  margin: 5px 0 12px 0;
 
   @media (min-width: $tablet-width) {
     width: 592px;
@@ -161,9 +174,9 @@
   }
 }
 
-//Additional-products__offer-wrapper
-
+//Обертка акционного предложения
 .additional-products__offer-wrapper {
+  position: relative;
   display: flex;
   width: 280px;
   height: 290px;
@@ -175,6 +188,17 @@
   background-image: url("../../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 66px;
+    left: 112px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/gift-photo-mobile@2x.jpg");
@@ -190,6 +214,13 @@
     background-position: 0 0;
     background-repeat: no-repeat;
 
+    &::before {
+      top: 63px;
+      left: 89px;
+      width: 62px;
+      height: 62px;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gift-photo-tablet@2x.jpg");
       background-size: 708px, auto;
@@ -204,6 +235,10 @@
     background-position: 0 0;
     background-repeat: no-repeat;
 
+    &::before {
+      left: 97px;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/gift-photo-desktop@2x.jpg");
       background-size: 245px, auto;
@@ -211,6 +246,7 @@
   }
 }
 
+//Текст акционного предложения
 .additional-products__offer {
   align-self: flex-end;
   padding: 27px 58px;
@@ -229,3 +265,5 @@
     text-align: center;
   }
 }
+
+// -Дополнительные товары- //

@@ -13,7 +13,7 @@
 
 //Заголовок
 .advantages__title {
-  margin: 25px 0 40px 20px;
+  margin: 28px 0 39px 20px;
 
   @include titie;
 
@@ -52,16 +52,18 @@
 
 //Отдельный пункт преимуществ
 .advantages__item {
-  display: flex;
-  padding: 2px 25px 21px 0;
+  position: relative;
+  padding: 2px 20px 24px 60px;
   font-family: $arial;
   color: $special-dark-grey;
 
   &::before {
+    position: absolute;
     content: "";
+    top: -1px;
+    left: -20px;
     width: 60px;
     height: 60px;
-    margin: -3px 20px 0 -20px;
     background-color: $green;
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -91,6 +93,7 @@
     }
   }
 
+  //Ретинизация иконок
   @media (min-resolution: 2dppx) {
     &:nth-child(1) {
       &::before {
@@ -122,22 +125,35 @@
   }
 
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
     width: 354px;
     padding: 0;
 
     @include title-tablet-desktop-description;
 
+    &:nth-child(1),
+    &:nth-child(2) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: -113px;
+        left: 1px;
+        width: 80px;
+        height: 80px;
+      }
+    }
+
     &:nth-child(3),
     &:nth-child(4) {
       padding-top: 245px;
-    }
 
-    &::before {
-      content: "";
-      width: 80px;
-      height: 80px;
-      margin: -113px -80px 0 0;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 132px;
+        left: 1px;
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 
@@ -158,6 +174,18 @@
 
     &:nth-child(4) {
       padding-top: 0;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      &::before {
+        position: absolute;
+        content: "";
+        top: -113px;
+        left: 1px;
+        width: 80px;
+        height: 80px;
+      }
     }
   }
 }
