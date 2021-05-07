@@ -1,3 +1,8 @@
+//Page
+
+// -Общие правила для родительских элементов- //
+
+//Общие правила для элемента "html"
 .page {
   height: 100%;
   font-size: 14px;
@@ -5,6 +10,7 @@
   font-family: "Oswald", "Arial", sans-serif;
 }
 
+//Общие правила для элемента "body"
 .page-body {
   width: 320px;
   min-height: auto;
@@ -20,3 +26,5 @@
     min-width: 1440px;
   }
 }
+
+// -Общие правила для родительских элементов- //

@@ -1,5 +1,8 @@
 //Example
 
+// -Живой пример- //
+
+//Контейнер
 .example {
   min-height: 660px;
   padding: 25px 20px 20px 20px;
@@ -8,6 +11,7 @@
   background-position: 0 385px;
   background-repeat: no-repeat;
 
+  //Ретинизация графики
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/before-mobile@2x.png");
     background-size: 311px auto;
@@ -26,6 +30,7 @@
   }
 }
 
+//Обертка
 .example__wrapper {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -36,6 +41,7 @@
     background-position: 16px 406px;
     background-repeat: no-repeat;
 
+    //Ретинизация графики
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/before-tablet@2x.png");
       background-size: 690px auto;
@@ -49,6 +55,7 @@
     background-position: 570px 4px;
     background-repeat: no-repeat;
 
+    //Ретинизация графики
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/before-desktop@2x.png");
       background-size: 690px auto;
@@ -56,6 +63,7 @@
   }
 }
 
+//Заголовок
 .example__title {
   margin: 0 0 15px 0;
   padding: 2px 0 18px 0;
@@ -76,6 +84,7 @@
   }
 }
 
+//Описание
 .example__text {
   font-family: $arial;
   color: $special-dark-grey;
@@ -92,6 +101,7 @@
   }
 }
 
+//Обертка результатов
 .example__results {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -104,6 +114,7 @@
   }
 }
 
+//Список результатов
 .example__list {
   display: flex;
   flex-wrap: wrap;
@@ -117,6 +128,7 @@
   }
 }
 
+//Характеристика
 .example__value {
   width: 122px;
   padding: 13px 0 17px 0;
@@ -138,6 +150,7 @@
   }
 }
 
+//Название характеристики
 .example__description {
   order: 2;
   width: 55px;
@@ -163,6 +176,7 @@
   }
 }
 
+//Затраты на питание
 .example__text-cost {
   margin-top: 20px;
   text-align: center;
@@ -186,6 +200,7 @@
   }
 }
 
+//Кнопки слайдера
 .example__button-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -208,3 +223,5 @@
     margin: 0;
   }
 }
+
+// -Живой пример- //

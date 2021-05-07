@@ -1,18 +1,22 @@
 //Comment
 
+// -Комментарий- //
+
+//Зоголовок
 .comment__title {
-  display: flex;
+  position: relative;
   margin: 27px 0 38px -2px;
 
   @include description-inputs;
 
+  //Зеленая полоса справа
   &::after {
+    position: absolute;
     content: "";
-    flex-grow: 1;
-    flex-shrink: 0;
-    width: 99px;
+    top: 15px;
+    right: 0;
+    width: 158px;
     height: 2px;
-    margin: 15px -2px 0 22px;
     background-color: $green;
   }
 
@@ -21,31 +25,43 @@
 
     @include medium-title;
 
-    &::after {
-      margin: 22px -48px 0 41px;
-    }
-
+    //Зеленая полоса слева
     &::before {
+      position: absolute;
       content: "";
+      top: 22px;
+      left: -68px;
       width: 30px;
       height: 2px;
-      margin: 22px 39px 0 -68px;
       background-color: $green;
+    }
+
+    //Зеленая полоса справа
+    &::after {
+      top: 22px;
+      right: -44px;
+      width: 478px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      margin: 22px -2px 0 42px;
+    //Зеленая полоса слева
+    &::before {
+      top: 21px;
+      left: -108px;
+      width: 70px;
     }
 
-    &::before {
-      width: 70px;
-      margin: 22px 40px 0 -110px;
+    //Зеленая полоса справа
+    &::after {
+      top: 21px;
+      right: 0;
+      width: 1108px;
     }
   }
 }
 
+//Поле для ввода
 .comment__item {
   min-width: 250px;
   min-height: 130px;
@@ -68,3 +84,5 @@
     margin: 0 0 0 -2px;
   }
 }
+
+// -Комментарий- //

@@ -1,6 +1,8 @@
 //Mixins
 
-//Mixins-text
+// -Набор миксин- //
+
+//Текстовые миксины
 @mixin title-tablet-desktop-big {
   font-size: 60px;
   line-height: 60px;
@@ -98,7 +100,7 @@
   color: $special-dark-grey;
 }
 
-//Mixins-border
+//Миксин для рамки
 @mixin border {
 
   border: 1px solid $low-grey;
@@ -111,3 +113,5 @@
     border: 1px solid $special-dark-grey;
   }
 }
+
+// -Набор миксин- //

@@ -1,5 +1,8 @@
 //Form
 
+// -Подбор программы- //
+
+//Контейнер формы
 .form {
   margin: 0 0 0 20px;
 
@@ -12,6 +15,7 @@
   }
 }
 
+//Зоголовок
 .form__title {
   margin-top: 27px;
   padding-bottom: 3px;
@@ -29,6 +33,12 @@
   }
 }
 
+//Форма
+.page-form {
+  text-transform: uppercase;
+}
+
+//Обертка футера формы
 .form-bottom__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -39,10 +49,7 @@
   }
 }
 
-.page-form {
-  text-transform: uppercase;
-}
-
+//Кнопка отправки формы
 .form-button {
   min-width: 280px;
   margin: 0 0 0 1px;
@@ -59,6 +66,7 @@
   }
 }
 
+//Текст в футере формы
 .form__text-bottom {
   margin: 20px 0 31px 63px;
   font-family: $arial;
@@ -74,3 +82,5 @@
     margin: 18px 0 92px 82px;
   }
 }
+
+// -Подбор программы- //

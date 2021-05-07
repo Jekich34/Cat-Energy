@@ -1,5 +1,8 @@
 //Page-header
 
+// -Шапка- //
+
+//Контейнер шапки
 .page-header {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -12,6 +15,7 @@
   }
 }
 
+//Контейнер логотипа
 .page-header__logo {
   @media (min-width: $tablet-width) {
     height: 38px;
@@ -23,6 +27,7 @@
   }
 }
 
+//Логотип
 .page-header__image {
   padding: 10px 110px 16px 20px;
 
@@ -38,8 +43,11 @@
   }
 }
 
+//Правило добаляет полосу внизу
 .page-header__image--border {
   @media (max-width: $mobile-width-only) {
     border-bottom: 1px solid $dark-grey;
   }
 }
+
+// -Шапка- //

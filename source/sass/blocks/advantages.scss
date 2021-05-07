@@ -57,6 +57,7 @@
   font-family: $arial;
   color: $special-dark-grey;
 
+  //Добаление графических элементов "зеленые квадраты"
   &::before {
     position: absolute;
     content: "";
@@ -69,6 +70,7 @@
     background-repeat: no-repeat;
   }
 
+  //Добавление иконок на "зеленые квадраты"
   &:nth-child(1) {
     &::before {
       background-image: url("../../img/advantage-leaf@1x.png");
@@ -130,6 +132,7 @@
 
     @include title-tablet-desktop-description;
 
+    //Позиционирование графических элементов "зеленые квадраты"
     &:nth-child(1),
     &:nth-child(2) {
       &::before {
@@ -160,6 +163,7 @@
   @media (min-width: $desktop-width) {
     width: auto;
 
+    //Позиционирование графических элементов "зеленые квадраты"
     &:nth-child(1) {
       padding-right: 123px;
     }
