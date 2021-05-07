@@ -1,20 +1,29 @@
+//Global
+
+// -Общие правила- //
+
+//Все изображения
 img {
   max-width: 100%;
   height: auto;
 }
 
+//Убираем подчеркивание для ссылок
 a {
   text-decoration: none;
 }
 
+//Убираем булеты у списков
 ul {
   list-style: none;
 }
 
+//Видоизменяем курсор при наведении на кнопку
 .button {
   cursor: pointer;
 }
 
+//Правило для скрытия визуального отображения элементов
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,3 +36,5 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// -Общие правила- //

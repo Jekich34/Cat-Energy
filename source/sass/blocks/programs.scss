@@ -1,5 +1,7 @@
 //Programs
 
+// -Выбор программы- //
+
 //Список программ
 .programs__list {
   @media (min-width: $tablet-width) {
@@ -47,6 +49,7 @@
   color: $black;
 
   @media (max-width: $mobile-width-only) {
+    //Добавление декоративного элемента "зеленый круг"
     &::before {
       position: absolute;
       content: "";
@@ -64,6 +67,7 @@
 
     @include medium-title;
 
+    //Добавление декоративного элемента "зеленый круг"
     &::before {
       position: absolute;
       content: "";
@@ -79,6 +83,7 @@
   @media (min-width: $desktop-width) {
     padding: 10px 0 58px 160px;
 
+    //Добавление декоративного элемента "зеленый круг"
     &::before {
       position: absolute;
       content: "";
@@ -201,7 +206,7 @@
   }
 }
 
-//Описание конкретной программы (похудение)
+//Описание конкретной программы "похудение"
 .programs__description-slim {
   @media (min-width: $tablet-width) {
     width: 377px;
@@ -212,7 +217,7 @@
   }
 }
 
-//Описание конкретной программы (набор массы)
+//Описание конкретной программы "набор массы"
 .programs__description-mass {
   @media (min-width: $tablet-width) {
     width: 342px;
@@ -286,3 +291,5 @@
     }
   }
 }
+
+// -Выбор программы- //
