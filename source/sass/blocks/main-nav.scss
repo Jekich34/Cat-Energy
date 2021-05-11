@@ -106,13 +106,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 440px;
-    margin: 0 30px 0 0;
+    margin: 0 12px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
-    margin: 0 112px 0 0;
+    margin: 0 89px 0 0;
   }
 }
 
@@ -135,7 +133,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 42px 0 8px 0;
+    margin: 42px 18px 8px;
     padding: 0 0 8px 0;
     font-weight: normal;
     font-size: 18px;
@@ -162,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 72px 0 9px 0;
+    margin: 72px 18px 9px;
     padding: 0 0 9px 0;
 
     @include title-tablet-desktop-auto;
