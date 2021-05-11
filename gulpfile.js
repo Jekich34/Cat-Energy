@@ -7,7 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
-const uglify = require("gulp-uglify-es");
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const del = require("del");
@@ -38,13 +38,14 @@ const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"))
+    .pipe(sync.stream());
 }
 
 // Scripts
 
 const scripts = () => {
   return gulp.src("source/js/menu.js")
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(rename("menu.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
@@ -81,7 +82,7 @@ exports.createWebp = createWebp;
 const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
-    "source/img/**/*.{jpg,png,svg}"
+    "source/img/**/*.{jpg,png,svg,webp}"
   ], {
     base: "source"
   })
@@ -117,7 +118,8 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/menu.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series(html, sync.reload));
+  gulp.watch("source/*.html", gulp.series(html));
+  gulp.series(sync.reload);
 }
 
 // Build
